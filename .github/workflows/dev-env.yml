@@ -20,7 +20,7 @@ jobs:
         with:
           push: true
           tags: ghcr.io/thiruttikorn/bookinfo_ratings:dev
- deploy:
+deploy:
     needs: build
     runs-on: ubuntu-20.04
     steps:
@@ -37,6 +37,6 @@ jobs:
         with:
           helm: helm3
           release: bookinfo-dev-ratings
-          namespace: student22-bookinfo-dev
+          namespace: student[X]-bookinfo-dev
           chart: k8s/helm
-          value-files: k8s/helm-values/values-bookinfo-dev-ratings.yaml                   
+          value-files: k8s/helm-values/values-bookinfo-dev-ratings.yaml               
