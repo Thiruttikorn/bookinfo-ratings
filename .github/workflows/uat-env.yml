@@ -1,4 +1,4 @@
-name: uat-env
+name: dev-env
 on:
   push:
     branches:
