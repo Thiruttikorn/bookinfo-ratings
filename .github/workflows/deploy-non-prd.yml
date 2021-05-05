@@ -37,7 +37,7 @@ jobs:
         uses: deliverybot/helm@v1
         with:
           helm: helm3
-          release: bookinfo-dev-ratings
+          release: bookinfo-${{ env.ENV_NAME }}-ratings
           namespace: student22-bookinfo-${{ env.ENV_NAME }}
           chart: k8s/helm
           value-files: k8s/helm-values/values-bookinfo-${{ env.ENV_NAME }}-ratings.yaml
