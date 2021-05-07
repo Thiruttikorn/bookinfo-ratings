@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Bookinfo Rating Service
 
 Rating service has been developed on NodeJS
@@ -24,3 +25,6 @@ docker run -d --name ratings -p 8080:8080 --link mongodb:mongodb \
 ```bash
 docker-compose up
 ```
+=======
+# bookinfo-ratings
+>>>>>>> 5c00b05db85f4325fa7bd2ecba1f846b23a7fc57
