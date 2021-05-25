@@ -1,7 +1,3 @@
-name: deploy-prd
-on:
-  workflow_dispatch:
-    inputs:
       deploy-version:
         description: 'Version to deploy'
         required: true
@@ -42,5 +38,3 @@ jobs:
     steps:
       - name: Acceptance Test
         run: curl http://bookinfo.opsta.net/student22/ratings/health | grep "Ratings is working"
-          
- 
